@@ -1,6 +1,8 @@
 from flask import Flask,jsonify,request
 from flask_swagger_ui import get_swaggerui_blueprint
 import service
+from waitress import serve
+
 
 SWAGGER_URL="/swagger"
 API_URL="/static/swagger.json"
@@ -91,4 +93,5 @@ def update(id):
 
 
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=5000)
+    #app.run(debug=True, port=5000)
+    serve(app, port=5000)

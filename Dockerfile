@@ -20,4 +20,4 @@ RUN pip install -r requirements.txt
 
 
 # Run app when the container launches
-CMD python /app/api/controller.py
+CMD python3 /app/api/controller.py

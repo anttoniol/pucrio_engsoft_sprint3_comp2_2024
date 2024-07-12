@@ -9,5 +9,5 @@ class Repository:
         user = self.__properties.get_value("mysql", "user")
         password = self.__properties.get_value("mysql", "password")
 
-        self._db = MySQLdb.connect(host="db", user=user, password=password, database="events_storage", port=3306)
+        self._db = MySQLdb.connect(host="db", user=user, password=password, database="events_storage")
 
