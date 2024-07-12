@@ -1,4 +1,3 @@
-# Use an official Python runtime as an image
 FROM python:3.10
 
 # The EXPOSE instruction indicates the ports on which a container

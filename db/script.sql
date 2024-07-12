@@ -1,5 +1,7 @@
 CREATE DATABASE IF NOT EXISTS events_storage;
 
+USE events_storage;
+
 CREATE TABLE IF NOT EXISTS coordinates (
     id int NOT NULL AUTO_INCREMENT,
     latitude decimal(12, 10) NOT NULL,
